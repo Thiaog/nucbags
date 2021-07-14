@@ -1,0 +1,57 @@
+body{
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(34,129,195,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box{
+    background: white;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    animation-name: animate2;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes animate1{
+    from{
+        top: 0;
+    }
+    to{
+        top: -200px;
+    }
+}
+
+@keyframes animate2{
+    0%{
+        top: 0;
+        left: 0;
+        background: red;
+    }
+    25%{
+        left: 300px;
+        top: 0;
+        background: peru;
+    }
+    50%{
+        left: 300px;
+        top: 300px;
+        background: royalblue;
+    }
+    75%{
+        left: 0;
+        top: 300px;
+        background: silver;
+    }
+    100%{
+        left: 0;
+        top: 0;
+        background: tomato;
+    }
+}

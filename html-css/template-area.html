@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor{
+            display: grid;
+            grid-template-areas: 
+            'header header header header'
+            'contenido contenido contenido sidebar'
+            'box1 box2 box3 box4'
+            'footer footer footer footer';
+            grid-gap: 1rem;
+        }
+        .header,
+        .contenido,
+        .sidebar,
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .footer{
+            border: 1px #ccc solid;
+        }
+
+        .header{
+            grid-area: header;
+        }
+        .contenido{
+            grid-area: contenido;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+        .box1{
+            grid-area: box1;
+        }
+        .box2{
+            grid-area: box2;
+        }
+        .box3{
+            grid-area: box3;
+        }
+        .box4{
+            grid-area: box4;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        @media (max-width: 500px) {
+            .contenedor {
+            grid-template-areas: 
+            'header'
+            'contenido'
+            'sidebar'
+            'box1' 
+            'box2' 
+            'box3' 
+            'box4'
+            'footer';
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <h1>Soy un header</h1>
+        </header>
+        <section class="contenido">
+            <h3>hola nucba</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </p>
+        </section>
+        <aside class="sidebar">
+            <h3>chau nucba</h3>
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+        </aside>
+        <div class="box1">
+            <h3>Box1</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="box2">
+            <h3>Box2</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="box3">
+            <h3>Box3</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="box4">
+            <h3>Box4</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <footer class="footer">
+            <p>Copyrigth &copy; Nucba 2020</p>
+        </footer>
+    </div>
+</body>
+</html>

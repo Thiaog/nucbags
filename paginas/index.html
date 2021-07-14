@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainclase10.css">
+    <link rel="stylesheet" href="styleclase10.css">
+    <title>NUCBA CONF</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <header class="principal">
+                <h1>NUCBA CONF</h1>
+                <p>Somos piolas</p>
+                <p>Cheto mal</p>
+            </header>
+            <div class="entrada entrada1">
+                <p>ENTRADA</p>
+                <p class="price">$500</p>
+                <p>VIP + FOTO CON FACU</p>
+            </div>
+            <div class="entrada entrada2">
+                <p>ENTRADA</p>
+                <P class="price">$200</P>
+                <p>AL FONDO Y 🍻 CON LUCHO</p>
+            </div>
+        </div>
+            <nav class="menu">
+                <button aria-expanded="false" aria-controls="menu-list">
+                    <span class="open">&#9776;</span>
+                    <span class="close">&#10006;</span>
+                </button>
+                <ul class="menu-list">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Speakers</a></li>
+                    <li><a href="">Precios</a></li>
+                    <li><a href="">Code</a></li>
+                    <li><a href="">VIP</a></li>
+                </ul>
+            </nav>
+
+            <section class="features">
+                <div class="feature">
+                    <span class="icon">🍺</span>
+                    <h3>Birra</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">🍔</span>
+                    <h3>Comida</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">💻</span>
+                    <h3>Coding</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="feature">
+                    <span class="icon">🎼</span>
+                    <h3>Musica toda la noche</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+            </section>
+
+            <section class="about">
+                <video src="../videos/widebwippo.mp4" controls></video>
+                <div class="about__details">
+                    <h2>Vamos a codear!</h2>
+                    <p>Slime profile, easy to hold and loaded with cheese</p>
+                    <p>This is the one you have been waiting for</p>
+                    <button>Info pls &#10140;</button>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <h2>Instant Grams</h2>
+                <img src="https://source.unsplash.com/random/300x300?v=1">
+                <img src="https://source.unsplash.com/random/300x300?v=2">
+                <img src="https://source.unsplash.com/random/300x300?v=3">
+                <img src="https://source.unsplash.com/random/300x300?v=4">
+                <img src="https://source.unsplash.com/random/300x300?v=5">
+                <img src="https://source.unsplash.com/random/300x300?v=6">
+                <img src="https://source.unsplash.com/random/300x300?v=7">
+                <img src="https://source.unsplash.com/random/300x300?v=8">
+                <img src="https://source.unsplash.com/random/300x300?v=9">
+                <img src="https://source.unsplash.com/random/300x300?v=10">
+            </section>
+    </div>
+    <script>
+        const navButton = document.querySelector('button[aria-expanded]');
+        function toggleNav({target}) {
+            const expandir =
+            target.getAttribute('aria-expanded') === "true" || false;
+            navButton.setAttribute('aria-expanded', !expandir);
+        }
+        navButton.addEventListener('click', toggleNav);
+    </script>
+</body>
+</html>
